@@ -1,3 +1,4 @@
+package Solo;
 public class Droid {
     String name;
     int batteryLevel;

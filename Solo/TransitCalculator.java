@@ -1,3 +1,4 @@
+package Solo;
 //Class that takes 2 parameters, total days and total rides expecting. outputs your best option financially
 
 public class TransitCalculator {

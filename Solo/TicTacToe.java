@@ -1,3 +1,4 @@
+package Solo;
 public class TicTacToe {
     String[][] board = new String[3][3];
     
