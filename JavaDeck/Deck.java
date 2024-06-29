@@ -1,14 +1,16 @@
 package JavaDeck;
-
 import java.util.*;
+
 // Deck class
 public class Deck{
     ArrayList<Card> deck = new ArrayList<Card>();
     public Deck(String mod){
+
         //Create Arraylists of all aspects of a single card
         String[] suits = {"Hearts", "Clubs", "Spades", "Diamonds"};
         ArrayList<String> ids = new ArrayList<String>();
         ArrayList<Integer> values = new ArrayList<Integer>();
+
         // Powers my come in handy for certain games
         ArrayList<String> powers = new ArrayList<String>();
 
@@ -30,8 +32,12 @@ public class Deck{
 
     // Debugging method, print the entire deck to the console - using the method in Card.java
     public void displayDeck(){
-        for (int i=0; i<deck.size(); i++){
-            deck.get(i).displayCard();
+        for (int i=0; i<this.deck.size(); i++){
+            this.deck.get(i).displayCard();
         }
+    }
+
+    public void shuffleDeck(){
+        Collections.shuffle(deck);
     }
 }
